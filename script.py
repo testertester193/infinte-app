@@ -5,7 +5,7 @@ import mysql.connector
 import time
 while True:
     try:
-        f = requests.get('http://dataservice.accuweather.com/currentconditions/v1/330088?apikey=81f1a81e62828a85c344863f07fa07e6&details=true')
+        f = requests.get('http://dataservice.accuweather.com/currentconditions/v1/330088?apikey=4N1tv8aMvQOyCSuF6GN24PL8bpkmeKQC&details=true')
         response = f.json()
         LODT = response[0]['LocalObservationDateTime']
         WT = response[0]['WeatherText']
